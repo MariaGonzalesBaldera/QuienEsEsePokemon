@@ -6,7 +6,7 @@ export default function PokeGame(){
     const [pokeValue,setPokeValue]= useState<string>('')
     const [isAssert,setIsAssert]= useState<boolean>(false)
     
-    const getRandomId =():number => Math.floor(Math.random()*1000)+1
+    const getRandomId =():number => Math.floor(Math.random()*649)+1
 
     const getRandomPokemon = async()=>{
         const id = getRandomId();

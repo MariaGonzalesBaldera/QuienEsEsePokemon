@@ -70,4 +70,5 @@ button:focus-visible {
 
 .hide-poke{
   filter: brightness(0);
+  pointer-events: none;
 }
