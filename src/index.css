@@ -28,11 +28,12 @@ button {
   align-items: center;
   text-align: center;
   width: 100%;
-  margin: 0 5em;
+  margin: 0 2.5em;
 }
 img{
-  height: 300px;
-  width: 400px;
+  height: 250px;
+  width: 350px;
+  margin-bottom: 1.5em;
 }
 .div-buton{
   margin-top: 1em;
