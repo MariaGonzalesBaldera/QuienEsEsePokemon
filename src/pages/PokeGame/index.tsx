@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getPokemon } from "../../services";
 import icoRefresh from "../../assets/img/cargando-flechas.png";
+import Swal from 'sweetalert2';
 
 export default function PokeGame() {
   const [pokemon, setPokemon] = useState<any>(null);
@@ -19,10 +20,13 @@ export default function PokeGame() {
     if (!pokeValue) return;
     setPokeValue("");
     if (pokeValue.toLowerCase() !== pokemon.name) {
-      alert("Fallaste");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No es ese Pokemón',
+          })
       return;
     }
-    alert("Excelente");
     setIsAssert(true);
   };
   useEffect(() => {
@@ -75,10 +79,14 @@ export default function PokeGame() {
             <div className="col-sm-3">
                 <div className={!isAssert ? "InfoPokemon" : ""}>
                 <div className="container">
-                    <h4>Aquí va a ir la información del pokemon</h4>
+                    <h4>Información</h4>
                 </div>
                 <div>
-                    {/* <h6>{pokemon.name}</h6>                     */}
+                {pokemon && (
+                <div className="div-infoPer">   
+                 <h2>El es : {pokemon.name}</h2>
+                </div>
+              )}
                 </div>
                 </div>
             </div>

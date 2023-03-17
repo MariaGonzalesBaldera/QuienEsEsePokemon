@@ -46,3 +46,6 @@ img{
 .InfoPokemon{
   display: none;
 }
+.div-infoPer{
+  align-items: center;
+}
