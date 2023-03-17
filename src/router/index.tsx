@@ -5,9 +5,9 @@ export default function Router(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<HomePage/>} />
+                <Route path='/poke-game' element={<HomePage/>} />
                 <Route path='/poke-search' element={<PokeSearchPage/>} />
-                <Route path='/poke-game' element={<PokeGamePage/>} />
+                <Route path='/' element={<PokeGamePage/>} />
             </Routes>
         </BrowserRouter>
     )
