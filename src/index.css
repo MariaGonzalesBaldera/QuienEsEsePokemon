@@ -1,14 +1,17 @@
 body {
-  margin: 0;
-  display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
   background-color: #EDEFF2;
 }
 
+.container{
+  align-items: center;
+  text-align: center;
+  margin-top: 2.8rem;
+  margin-left: 3.5rem;
+}
+
 button {
-  border-radius: 8px;
+  border-radius: 3rem;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -24,29 +27,41 @@ button {
   pointer-events: none;
   margin-right: 2.5rem;
 }
-.container{
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  margin: 0 2.5em;
+
+.form-control{
+  margin-top: 1.5rem;
 }
-img{
-  height: 250px;
-  width: 350px;
-  margin-bottom: 1.5em;
+#img-pokemon{
+  height: 15rem;
+  width: 20rem;
 }
+
 .div-buton{
-  margin-top: 1em;
+  margin-top: 1.5em;
   text-align: center;
 }
+
 .icoRefresh{
   margin-left: 1.6em;
-  height: 40px;
-  width: 40px;
+  height: 3rem;
+  width: 3rem;
 }
+
 .InfoPokemon{
   display: none;
 }
+
 .div-infoPer{
   align-items: center;
+}
+
+@media screen and (max-width:480px){
+  .container{
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+  .icoRefresh{
+    margin-top: 1.5rem;
+  }
+  
 }

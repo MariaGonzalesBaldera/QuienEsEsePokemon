@@ -51,10 +51,10 @@ export default function PokeGame() {
             {pokemon && (
               <div className="containerMedio">
                 <div className="">
-                  <img
+                  <img id="img-pokemon"
                     className={!isAssert ? "hide-poke" : ""}
                     src={pokemon?.sprites?.other.dream_world.front_default}
-                    alt=""
+                    alt="pokemon"
                   />
                 </div>
                 <input
@@ -81,13 +81,15 @@ export default function PokeGame() {
             )}
           </div>
           <div className="col order-first">
-            <h1 className="h1 fw-bold mb-2">¿Quién es ese Pokemón?</h1>
+            <h1 className="h1 fw-bold mt-5">¿Quién es ese Pokemón?</h1>
             <h2 className="fs-base lh-base fw-medium text-muted mb-0">
               Adivina la silueta
             </h2>
+            <br/>
           </div>
         </div>
       </div>
     </div>
+    
   );
 }
